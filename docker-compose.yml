@@ -1,0 +1,28 @@
+# docker compose up --build   ->  dashboard + API on http://localhost:8000
+services:
+  api:
+    build: .
+    ports: ["8000:8000"]
+    env_file: [.env]
+    environment:
+      SANDBOX_URL: http://sandbox:9000
+    volumes:
+      - ./data:/app/data            # datasets, trained model, memory, checkpoints persist here
+    networks: [public, internal]
+    depends_on: [sandbox]
+
+  sandbox:
+    build: { context: ., dockerfile: sandbox/Dockerfile }
+    read_only: true
+    tmpfs: [/tmp]
+    cpus: 1
+    mem_limit: 512m
+    pids_limit: 64
+    cap_drop: [ALL]
+    security_opt: ["no-new-privileges:true"]
+    networks: [internal]            # internal network only: no route to the internet
+
+networks:
+  public: {}
+  internal:
+    internal: true

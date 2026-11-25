@@ -1,0 +1,44 @@
+{
+ "tests": [
+  {
+   "component": "Guardrail",
+   "name": "prompt injections blocked (15 crafted notes)",
+   "result": "15/15"
+  },
+  {
+   "component": "Guardrail",
+   "name": "benign call notes wrongly blocked (15)",
+   "result": "0/15"
+  },
+  {
+   "component": "Critic",
+   "name": "bad plans rejected (6 rule violations)",
+   "result": "6/6"
+  },
+  {
+   "component": "Critic",
+   "name": "valid plans accepted (5)",
+   "result": "5/5"
+  },
+  {
+   "component": "Claims audit",
+   "name": "rationales with planted numbers caught (6)",
+   "result": "6/6"
+  },
+  {
+   "component": "Claims audit",
+   "name": "grounded rationales passed (3)",
+   "result": "3/3"
+  },
+  {
+   "component": "Sandbox",
+   "name": "escape attempts blocked (10)",
+   "result": "10/10"
+  },
+  {
+   "component": "Sandbox",
+   "name": "analysis code returns the known answer (3)",
+   "result": "3/3"
+  }
+ ]
+}

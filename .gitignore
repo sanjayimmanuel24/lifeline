@@ -1,0 +1,14 @@
+.venv/
+node_modules/
+frontend/dist/
+__pycache__/
+*.pyc
+.env
+data/*.parquet
+data/*.geojson
+data/*.json
+data/artifacts/memory/
+data/artifacts/checkpoints.sqlite*
+data/artifacts/llm_cache.sqlite
+data/artifacts/benchmark.log
+*.tsbuildinfo

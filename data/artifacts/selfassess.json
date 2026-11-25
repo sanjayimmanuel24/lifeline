@@ -1,0 +1,111 @@
+{
+ "n_situations": 1728,
+ "n_real": 288,
+ "n_stress": 1440,
+ "win_rate": 0.6811342592592593,
+ "win_rate_real": 0.6770833333333334,
+ "share_move_decisions": 0.1597222222222222,
+ "win_rate_moves": 0.717391304347826,
+ "win_rate_holds": 0.6742424242424242,
+ "mean_regret": 9.573882080936697,
+ "reliability": {
+  "ece_raw": 0.22093141769944724,
+  "ece_calibrated": 0.09086801803148509,
+  "brier": 0.2261616510603934,
+  "bins": [
+   {
+    "bin": "0.4-0.5",
+    "confidence": 0.44736842105263164,
+    "accuracy": 0.5658914728682171,
+    "n": 258
+   },
+   {
+    "bin": "0.5-0.6",
+    "confidence": 0.5884974076979504,
+    "accuracy": 0.6666666666666666,
+    "n": 6
+   },
+   {
+    "bin": "0.7-0.8",
+    "confidence": 0.7330798059964727,
+    "accuracy": 0.6701388888888888,
+    "n": 288
+   },
+   {
+    "bin": "0.8-0.9",
+    "confidence": 0.8440225016986719,
+    "accuracy": 0.75,
+    "n": 312
+   }
+  ],
+  "n_holdout": 864
+ },
+ "by_bucket": [
+  {
+   "bucket": "afternoon|dry|normal",
+   "n": 276,
+   "win_rate": 0.7934782608695652,
+   "regret": 5.762537755189374
+  },
+  {
+   "bucket": "afternoon|dry|surge",
+   "n": 96,
+   "win_rate": 0.6979166666666666,
+   "regret": 6.892796467108195
+  },
+  {
+   "bucket": "afternoon|rain|normal",
+   "n": 60,
+   "win_rate": 0.75,
+   "regret": 6.5705360802392745
+  },
+  {
+   "bucket": "evening|dry|normal",
+   "n": 354,
+   "win_rate": 0.7796610169491526,
+   "regret": 5.659946625503381
+  },
+  {
+   "bucket": "evening|dry|surge",
+   "n": 18,
+   "win_rate": 0.2222222222222222,
+   "regret": 27.571855007646732
+  },
+  {
+   "bucket": "evening|rain|normal",
+   "n": 60,
+   "win_rate": 0.7166666666666667,
+   "regret": 6.590912634328624
+  },
+  {
+   "bucket": "morning|dry|normal",
+   "n": 366,
+   "win_rate": 0.6830601092896175,
+   "regret": 8.90675034850433
+  },
+  {
+   "bucket": "morning|dry|surge",
+   "n": 18,
+   "win_rate": 0.7222222222222222,
+   "regret": 8.854148646864587
+  },
+  {
+   "bucket": "morning|rain|normal",
+   "n": 48,
+   "win_rate": 0.6875,
+   "regret": 7.946749813737527
+  },
+  {
+   "bucket": "night|dry|normal",
+   "n": 384,
+   "win_rate": 0.53125,
+   "regret": 16.910233927897334
+  },
+  {
+   "bucket": "night|rain|normal",
+   "n": 48,
+   "win_rate": 0.4791666666666667,
+   "regret": 14.743308616165008
+  }
+ ]
+}
